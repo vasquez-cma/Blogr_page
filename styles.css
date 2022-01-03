@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-title{
+    margin-right: 30px;
+    color: white;
+}
+
+
+header{
+    padding: 10px;
+    height: 470px;
+    background-color: rgb(254,132,109);
+}
+
+.menu-links li a{
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+
+.menu-links li{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+}
+
+.menu-buttons-container li a{
+    color: white;
+    margin-right: 25px;
+    font-weight: bold;
+
+}
+
+.menu-buttons-container li{
+    margin-bottom: 10px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.header-container{
+    display: flex;
+    width: 100%;
+    
+}
+
+.menu-links{
+    display: flex;
+}
+
+.menu-buttons-container{
+    display: flex;
+    
+}
+
+
+
+@media all and (max-width:768px){
+
+
+    header{
+        border-bottom-left-radius: 60px;
+    }
+
+    .header-container{
+        padding: 10px;
+    }
+    
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .menu{
+        display: none;
+
+    }
+    
+    .show{
+        display: flex;
+        position: fixed;
+        padding: 20px;
+        background-color: white;
+        margin-top: 70px;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        height: 340px;
+        text-align: center;
+        justify-content: space-between;
+        border-radius: 6px;
+    }
+
+    .menu-buttons-container li a{
+        color: rgb(70, 70, 70);
+    }
+    
+    .menu-links li a{
+        color: rgb(70, 70, 70);
+      
+    }
+
+    .menu-links{
+        flex-direction: column;
+    }
+
+    .menu-buttons-container{
+        flex-direction: column;
+        border-top: 1px solid rgb(207, 207, 207);
+        width: 220px;
+        padding: 15px;
+    }
+
+    .header-content-container{
+        margin-top: 50px;
+    }
+
+    .header-content-title{
+        text-align: center;
+        color: white;
+        margin-top: 80px;
+    }
+
+    .header-content-paragraph{
+        text-align: center;
+        margin-top: 40px;
+        color: white;
+    }
+
+
+    .header-content-buttons{
+        margin-top: 70px;
+        text-align: center;
+        
+    }
+
+    .content-button{
+        margin-right: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 18px;
+        border: 1px solid white;
+        font-size: 16px;
+        padding: 5px;
+        color: white;
+        outline: none;
+    }
+
+    .content-button:hover{
+        background-color: white;
+        color: rgb(254,132,109);
+    }
+
+    /* Content block */
+
+    .design-content-container{
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .design-content-title{
+        text-align: center;
+    }
+
+    .design-image{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .content{
+        margin-top: 60px;
+    }
+
+    .content-title{
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(66, 66, 66);
+    }
+
+    .content-paragraph{
+        text-align: center;
+        color: rgb(87, 87, 87);
+        line-height: 1.5;
+    }
+
+    /* State block */
+
+
+    .state-container{
+        position: relative;
+        margin-top: 260px;
+    }
+
+    .state-content{
+        background-color: rgb(60,63,96);
+        height: 550px;
+        padding: 25px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+
+
+    .state-title{
+        color: white;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 32px;
+        margin-top: 140px;
+    }
+
+
+    .state-paragraph{
+        color: white;
+        margin-top: 40px;
+        text-align: center;
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .state-img-cellphone{
+        position: absolute;
+        width: 100%;
+        top: -190px;
+    }
+
+    .features-container{
+        margin-top: 60px;
+        padding: 20px;
+    }
+
+    .features-image{
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer{
+        background-color: rgb(43, 43, 43);
+        padding: 30px;
+        text-align: center;
+        border-top-right-radius: 60px;
+        margin-top: 60px;
+    }
+
+    .footer-title{
+        color: white;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+
+    .footer-list-title{
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .footer-nav{
+        margin-bottom: 60px;
+    }
+
+    .footer-nav li{
+        margin-bottom: 10px;
+    }
+
+    .footer-nav li:hover{
+        text-decoration: underline;
+    }
+
+    .footer-nav li a{
+        color: rgb(190, 190, 190);
+    }
+    
+}
+
+@media all and (min-width:1024px){
+
+    .header-content-container{
+        margin-top: 80px;
+    }
+    
+    .header-content-title{
+        text-align: center;
+        font-size: 50px;
+        color: white;
+    }
+    
+    .header-content-paragraph{
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+
+    .header-content-buttons{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .content-button{
+        
+        margin-right: 20px;
+        width: 120px;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 18px;
+        border: 1px solid white;
+        font-size: 16px;
+        padding: 5px;
+        color: white;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .content-button:hover{
+        background-color: white;
+        color: rgb(254,132,109);
+
+    }
+
+    /* Design section */
+
+    .design-content-container{
+        padding: 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .design-content-title{
+        text-align: center;
+        font-size: 32px;
+        color: rgb(49, 49, 49);
+        margin-bottom: 30px;
+    }
+
+    .design-image{
+        width: 70%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .content{
+        margin-top: 60px;
+    }
+
+    .content-title{
+        text-align: center;
+        margin-bottom: 20px;
+        color: rgb(66, 66, 66);
+    }
+
+    .content-paragraph{
+        text-align: center;
+        color: rgb(87, 87, 87);
+        line-height: 1.5;
+    }
+
+    .design-content{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+
+    /* State block */
+
+    .state-container{
+        margin-top: 140px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(60,63,96);
+    }
+
+    .state-title{
+        font-size: 30px;
+        color: white;
+    }
+
+    .state-paragraph{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 2;
+        color: white;
+    }
+
+    /* Features content block */
+
+    .features-container{
+        display: flex;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .features-image{
+        width: 500px;
+    }
+
+
+    footer{
+
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        background-color: rgb(43, 43, 43);
+        text-align: center;
+        border-top-right-radius: 60px;
+        margin-top: 90px;
+        height: 260px;
+    }
+
+    .footer-title{
+        color: white;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+
+    .footer-list-title{
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .footer-nav{
+        margin-bottom: 60px;
+    }
+
+    .footer-nav li{
+        margin-bottom: 10px;
+    }
+
+    .footer-nav li:hover{
+        text-decoration: underline;
+    }
+
+    .footer-nav li a{
+        color: rgb(190, 190, 190);
+    }
+}
